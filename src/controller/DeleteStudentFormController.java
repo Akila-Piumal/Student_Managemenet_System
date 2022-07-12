@@ -26,6 +26,12 @@ public class DeleteStudentFormController {
         try {
             if (StudentCrudController.deleteStudent(txtId.getText())) {
                 new Alert(Alert.AlertType.CONFIRMATION,"Deleted").show();
+                txtId.clear();
+                txtName.clear();
+                txtAddress.clear();
+                txtContact.clear();
+                txtEmail.clear();
+                txtNic.clear();
             }else {
                 new Alert(Alert.AlertType.WARNING,"Something went wrong").show();
             }
