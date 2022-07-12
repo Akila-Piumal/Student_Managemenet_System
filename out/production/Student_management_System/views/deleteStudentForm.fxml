@@ -7,7 +7,7 @@
 <?import javafx.scene.text.Font?>
 
 
-<AnchorPane prefHeight="500.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DeleteStudentFormController">
+<AnchorPane fx:id="deleteStudentFormContext" prefHeight="500.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DeleteStudentFormController">
    <children>
       <Label layoutX="148.0" layoutY="27.0" text="Delete Student">
          <font>
