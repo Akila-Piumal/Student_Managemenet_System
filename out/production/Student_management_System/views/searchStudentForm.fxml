@@ -20,6 +20,7 @@
       <TextField fx:id="txtContact" layoutX="138.0" layoutY="260.0" promptText="Contact" />
       <TextField fx:id="txtAddress" layoutX="138.0" layoutY="312.0" promptText="Address" />
       <TextField fx:id="txtNic" layoutX="138.0" layoutY="363.0" promptText="Nic" />
-      <Button layoutX="203.0" layoutY="416.0" mnemonicParsing="false" onAction="#btnSearchOnAction" text="Search" />
+      <Button layoutX="203.0" layoutY="416.0" mnemonicParsing="false" onAction="#btnSearchOnAction" prefHeight="31.0" prefWidth="79.0" text="Search" />
+      <Button layoutX="26.0" layoutY="27.0" mnemonicParsing="false" onAction="#backToHomeOnAction" text="Back" />
    </children>
 </AnchorPane>

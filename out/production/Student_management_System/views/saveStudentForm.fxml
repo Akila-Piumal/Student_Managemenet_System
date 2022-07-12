@@ -7,7 +7,7 @@
 <?import javafx.scene.text.Font?>
 
 
-<AnchorPane prefHeight="500.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SaveStudentFormController">
+<AnchorPane fx:id="saveStudentFormContext" prefHeight="500.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SaveStudentFormController">
    <children>
       <Label layoutX="151.0" layoutY="14.0" text="Save Student">
          <font>
@@ -21,5 +21,6 @@
       <TextField fx:id="txtAddress" layoutX="128.0" layoutY="302.0" promptText="Address" />
       <TextField fx:id="txtNic" layoutX="128.0" layoutY="353.0" promptText="Nic" />
       <Button layoutX="193.0" layoutY="406.0" mnemonicParsing="false" onAction="#btnSaveOnAction" text="Save" />
+      <Button layoutX="22.0" layoutY="34.0" mnemonicParsing="false" onAction="#backToHomeOnAction" text="Back" />
    </children>
 </AnchorPane>
