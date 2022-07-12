@@ -27,6 +27,12 @@ public class UpdateStudentFormController {
         try {
             if (StudentCrudController.updateStudent(student)) {
                 new Alert(Alert.AlertType.CONFIRMATION,"Updated").show();
+                txtId.clear();
+                txtName.clear();
+                txtAddress.clear();
+                txtContact.clear();
+                txtEmail.clear();
+                txtNic.clear();
             }else {
                 new Alert(Alert.AlertType.WARNING,"Something went Wrong").show();
             }
