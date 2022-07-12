@@ -12,6 +12,7 @@ public class DeleteStudentFormController {
     public TextField txtNic;
 
     public void btnDeleteOnAction(ActionEvent actionEvent) {
+
     }
 
     public void backToHomeOnAction(ActionEvent actionEvent) {

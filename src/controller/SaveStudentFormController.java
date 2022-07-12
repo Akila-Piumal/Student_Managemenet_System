@@ -4,11 +4,9 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
-import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
-import javafx.stage.Window;
 import model.Student;
 
 import java.io.IOException;
@@ -25,7 +23,7 @@ public class SaveStudentFormController {
 
     public void btnSaveOnAction(ActionEvent actionEvent) {
         try {
-            if (CustomerCrudController.saveStudent(new Student(txtId.getText(),txtName.getText(),txtEmail.getText(),txtContact.getText(),txtAddress.getText(),txtNic.getText()))) {
+            if (StudentCrudController.saveStudent(new Student(txtId.getText(),txtName.getText(),txtEmail.getText(),txtContact.getText(),txtAddress.getText(),txtNic.getText()))) {
                 new Alert(Alert.AlertType.CONFIRMATION,"Saved").show();
             }else{
                 new Alert(Alert.AlertType.WARNING,"Something went Wrong").show();
