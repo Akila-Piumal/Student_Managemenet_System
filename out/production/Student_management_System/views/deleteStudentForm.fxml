@@ -14,7 +14,7 @@
             <Font name="System Bold" size="24.0" />
          </font>
       </Label>
-      <TextField fx:id="txtId" layoutX="148.0" layoutY="109.0" promptText="Id" />
+      <TextField fx:id="txtId" layoutX="148.0" layoutY="109.0" onAction="#txtSearchOnAction" promptText="Id" />
       <TextField fx:id="txtName" layoutX="148.0" layoutY="163.0" promptText="Name" />
       <TextField fx:id="txtEmail" layoutX="148.0" layoutY="221.0" promptText="Email" />
       <TextField fx:id="txtContact" layoutX="148.0" layoutY="270.0" promptText="Contact" />
