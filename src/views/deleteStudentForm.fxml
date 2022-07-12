@@ -21,5 +21,6 @@
       <TextField fx:id="txtAddress" layoutX="148.0" layoutY="322.0" promptText="Address" />
       <TextField fx:id="txtNic" layoutX="148.0" layoutY="373.0" promptText="Nic" />
       <Button layoutX="213.0" layoutY="426.0" mnemonicParsing="false" onAction="#btnDeleteOnAction" prefHeight="31.0" prefWidth="79.0" text="Delete" />
+      <Button layoutX="32.0" layoutY="44.0" mnemonicParsing="false" onAction="#backToHomeOnAction" text="Back" />
    </children>
 </AnchorPane>

@@ -13,4 +13,8 @@ public class DeleteStudentFormController {
 
     public void btnDeleteOnAction(ActionEvent actionEvent) {
     }
+
+    public void backToHomeOnAction(ActionEvent actionEvent) {
+
+    }
 }

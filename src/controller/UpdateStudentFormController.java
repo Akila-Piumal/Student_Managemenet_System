@@ -13,4 +13,8 @@ public class UpdateStudentFormController {
 
     public void btnUpdateOnAction(ActionEvent actionEvent) {
     }
+
+    public void backToHomeOnAction(ActionEvent actionEvent) {
+
+    }
 }

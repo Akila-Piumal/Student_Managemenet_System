@@ -21,5 +21,6 @@
       <TextField fx:id="txtAddress" layoutX="138.0" layoutY="312.0" promptText="Address" />
       <TextField fx:id="txtNic" layoutX="138.0" layoutY="363.0" promptText="Nic" />
       <Button layoutX="203.0" layoutY="416.0" mnemonicParsing="false" onAction="#btnUpdateOnAction" text="Update" />
+      <Button layoutX="31.0" layoutY="32.0" mnemonicParsing="false" onAction="#backToHomeOnAction" text="Back" />
    </children>
 </AnchorPane>

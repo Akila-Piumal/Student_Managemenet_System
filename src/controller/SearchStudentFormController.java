@@ -14,4 +14,8 @@ public class SearchStudentFormController {
     public void btnSearchOnAction(ActionEvent actionEvent) {
 
     }
+
+    public void backToHomeOnAction(ActionEvent actionEvent) {
+
+    }
 }

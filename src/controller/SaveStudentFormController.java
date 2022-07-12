@@ -15,4 +15,8 @@ public class SaveStudentFormController {
     public void btnSaveOnAction(ActionEvent actionEvent) {
 
     }
+
+    public void backToHomeOnAction(ActionEvent actionEvent) {
+
+    }
 }
