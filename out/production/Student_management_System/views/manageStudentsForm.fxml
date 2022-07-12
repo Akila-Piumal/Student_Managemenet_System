@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="dashBoardContext" prefHeight="434.0" prefWidth="473.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ManageStudentsFormController">
+   <children>
+      <Label layoutX="128.0" layoutY="14.0" prefHeight="39.0" prefWidth="217.0" text="Manage Student">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Label>
+      <Button layoutX="167.0" layoutY="110.0" mnemonicParsing="false" onAction="#saveStudentFormOnAction" text="Save Student" />
+      <Button layoutX="161.0" layoutY="162.0" mnemonicParsing="false" onAction="#updateStudentFormOnAction" text="Update Student" />
+      <Button layoutX="161.0" layoutY="217.0" mnemonicParsing="false" onAction="#deleteStudentFormOnAction" text="Delete Student" />
+      <Button layoutX="164.0" layoutY="268.0" mnemonicParsing="false" onAction="#searchStudentFormOnAction" text="Search Student" />
+      <Button layoutX="153.0" layoutY="322.0" mnemonicParsing="false" onAction="#allStudentsFormOnAction" text="View All Students" />
+   </children>
+</AnchorPane>
