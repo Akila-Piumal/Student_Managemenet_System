@@ -10,6 +10,7 @@ import javafx.stage.Stage;
 import model.Student;
 
 import java.io.IOException;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class SaveStudentFormController {
@@ -22,12 +23,26 @@ public class SaveStudentFormController {
     public AnchorPane saveStudentFormContext;
 
     public void btnSaveOnAction(ActionEvent actionEvent) {
+
         try {
-            if (StudentCrudController.saveStudent(new Student(txtId.getText(),txtName.getText(),txtEmail.getText(),txtContact.getText(),txtAddress.getText(),txtNic.getText()))) {
-                new Alert(Alert.AlertType.CONFIRMATION,"Saved").show();
+            ResultSet resultSet = StudentCrudController.searchStudent(txtId.getText());
+            if (resultSet.next()){
+                new Alert(Alert.AlertType.WARNING,"Student id Already exists").show();
             }else{
-                new Alert(Alert.AlertType.WARNING,"Something went Wrong").show();
+                if (StudentCrudController.saveStudent(new Student(txtId.getText(),txtName.getText(),txtEmail.getText(),txtContact.getText(),txtAddress.getText(),txtNic.getText()))) {
+                    new Alert(Alert.AlertType.CONFIRMATION,"Saved").show();
+                    txtId.clear();
+                    txtName.clear();
+                    txtAddress.clear();
+                    txtContact.clear();
+                    txtEmail.clear();
+                    txtNic.clear();
+                }else{
+                    new Alert(Alert.AlertType.WARNING,"Something went Wrong").show();
+                }
             }
+
+
         } catch (SQLException e) {
             e.printStackTrace();
         } catch (ClassNotFoundException e) {
