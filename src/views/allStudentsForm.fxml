@@ -8,21 +8,21 @@
 <?import javafx.scene.text.Font?>
 
 
-<AnchorPane prefHeight="500.0" prefWidth="550.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AllStudentsFormController">
+<AnchorPane fx:id="allStudentsFormContext" prefHeight="500.0" prefWidth="652.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AllStudentsFormController">
    <children>
       <Label layoutX="211.0" layoutY="34.0" text="All Students">
          <font>
             <Font name="System Bold" size="24.0" />
          </font>
       </Label>
-      <TableView fx:id="tblStudentDetails" layoutX="32.0" layoutY="123.0" prefHeight="329.0" prefWidth="494.0">
+      <TableView fx:id="tblStudentDetails" layoutX="32.0" layoutY="123.0" prefHeight="329.0" prefWidth="595.0">
         <columns>
           <TableColumn prefWidth="65.0" text="id" />
           <TableColumn prefWidth="79.0" text="name" />
-            <TableColumn prefWidth="89.0" text="Email" />
-            <TableColumn prefWidth="76.0" text="Contact" />
-            <TableColumn prefWidth="86.0" text="Address" />
-            <TableColumn prefWidth="98.0" text="Nic" />
+            <TableColumn prefWidth="133.0" text="Email" />
+            <TableColumn prefWidth="104.0" text="Contact" />
+            <TableColumn prefWidth="112.0" text="Address" />
+            <TableColumn prefWidth="101.0" text="Nic" />
         </columns>
       </TableView>
       <Button layoutX="32.0" layoutY="21.0" mnemonicParsing="false" onAction="#backToHomeOnAction" text="Back" />

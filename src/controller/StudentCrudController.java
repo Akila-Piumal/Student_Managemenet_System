@@ -5,6 +5,7 @@ import util.CrudUtil;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 
 public class StudentCrudController {
     public static boolean saveStudent(Student student) throws SQLException, ClassNotFoundException {
@@ -22,5 +23,14 @@ public class StudentCrudController {
 
     public static boolean updateStudent(Student student) throws SQLException, ClassNotFoundException {
         return CrudUtil.executeUpdate("UPDATE student SET student_name=?,email=?,contact=?,address=?,nic=? WHERE student_id=?",student.getName(),student.getEmail(),student.getContact(),student.getAddress(),student.getNic(),student.getId());
+    }
+
+    public static ArrayList<Student> getAllStudents() throws SQLException, ClassNotFoundException {
+        ResultSet resultSet = CrudUtil.executeQuery("SELECT * FROM student");
+        ArrayList<Student> students=new ArrayList<>();
+        while (resultSet.next()){
+            students.add(new Student(resultSet.getString(1),resultSet.getString(2),resultSet.getString(3),resultSet.getString(4),resultSet.getString(5),resultSet.getString(6)));
+        }
+        return students;
     }
 }
