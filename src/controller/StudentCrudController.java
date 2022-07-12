@@ -19,4 +19,8 @@ public class StudentCrudController {
         ResultSet resultSet = CrudUtil.executeQuery("SELECT * FROM student WHERE student_id=?", id);
         return resultSet;
     }
+
+    public static boolean updateStudent(Student student) throws SQLException, ClassNotFoundException {
+        return CrudUtil.executeUpdate("UPDATE student SET student_name=?,email=?,contact=?,address=?,nic=? WHERE student_id=?",student.getName(),student.getEmail(),student.getContact(),student.getAddress(),student.getNic(),student.getId());
+    }
 }
